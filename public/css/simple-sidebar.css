@@ -1,0 +1,98 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/templates/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+#sidebar-wrapper .list-group-item {
+    position: relative;
+    display: block;
+    padding: 15px 23px;
+    -moz-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    -ms-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+#sidebar-wrapper .list-group.list-group-flush {
+    font-size: 18px;
+    line-height: 30px;
+    background: #f8f8f8;
+    font-weight: 300;
+    border-bottom: 2px solid #FFF;
+}
+
+#sidebar-wrapper .list-group a:hover {
+    padding-left: 50px;
+    color: #30b9b7;
+    font-weight: bold;
+}
+
+#sidebar-wrapper .list-group a:before {
+    content: url(../images/ico05.png);
+    margin-right: 20px;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#sidebar-wrapper .list-group a:hover:before {
+
+    left: 30px;
+    top: 13px;
+    opacity: 1;
+    visibility: visible;
+    -moz-transition-duration: .9s;
+    -webkit-transition-duration: .9s;
+    -o-transition-duration: .9s;
+    -ms-transition-duration: .9s;
+    transition-duration: .9s;
+}
